@@ -55,6 +55,8 @@ The included `Dictionary` app is a simple application that fetches word definiti
 
 During the development of this tool, we discovered that attempts to globally modify `URLSessionConfiguration.default` (to inject our `URLProtocol` for `URLSession.shared`) were unreliable across different environments and app lifecycle states. Therefore, the current recommended and most robust method is to explicitly create `URLSession` instances using the `NetworkDebugger.patchedConfiguration()` for requests you wish to monitor or mock during debugging.
 
+Curious? Full 5 minute read here → [Link](https://medium.com/@darshandodia/mock-smarter-not-harder-an-api-stubbing-tools-journey-c7ee519b39ad)
+
 ## Contributing
 
 Feel free to fork, improve, and submit pull requests! If you encounter issues or have suggestions, please open an issue.
